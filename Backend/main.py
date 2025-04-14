@@ -19,7 +19,7 @@ def get_filtered_news(
     currency: Optional[str] = Query(None, description="Filter by currency (e.g., USD, EUR)"),
     date: Optional[str] = Query(None, description="Filter by date string (YYYY.MM.DD)")
 ):
-    url = "https://www.jblanked.com/news/api/forex-factory/calendar/today/"
+    url = "https://www.jblanked.com/news/api/mql5/calendar/today/"
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Api-Key 8A5puVeD",
